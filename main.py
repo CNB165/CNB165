@@ -1,6 +1,11 @@
 import pygame
 from game import Game
+
 pygame.init()
+
+#définir une clock
+clock = pygame.time.Clock()
+FPS = 60
 
 
 #générer la fenêtre
@@ -8,14 +13,14 @@ pygame.display.set_caption("Street Fighter")
 screen = pygame.display.set_mode((1850, 900))
 
 #importer le bg
-background = pygame.image.load("D:/projet_3/fond.png")
+background = pygame.image.load('D:/projet_3/fond.png')
 
 #importer le bouton jouer
-banner = pygame.image.load('D:/projet_3/bouton_jouer.png')
-banner = pygame.transform.scale(banner, (363, 188))
+banner = pygame.image.load('D:/projet_3/logo.png')
+banner = pygame.transform.scale(banner, (866, 318))
 banner_rect = banner.get_rect()
-banner_rect.x = screen.get_width() / 2.5
-banner_rect.y = screen.get_height() / 2.5
+banner_rect.x = screen.get_width() / 3.4
+banner_rect.y = screen.get_height() / 3
 
 
 #charger le jeu
@@ -55,7 +60,10 @@ while running:
             
             #détecter touche espace pr le projectile
             if event.key == pygame.K_SPACE:
-                game.player1.launch_gravier()
+                if game.is_playing:
+                    game.player1.launch_gravier()
+                else:
+                    game.start()
             
         elif event.type == pygame.KEYUP:
             game.pressed[event.key] = False
@@ -65,3 +73,6 @@ while running:
             if banner_rect.collidepoint(event.pos):
                 #lancer le jeu
                 game.start()
+                
+    #fixer le nb de fps sur la clock
+    clock.tick(FPS)

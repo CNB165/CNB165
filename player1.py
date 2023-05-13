@@ -6,7 +6,7 @@ from gravier import Gravier
 class Player1(pygame.sprite.Sprite):
     
     def __init__(self, game):
-        super().__init__()
+        super().__init__() #charger le sprite
         self.game = game
         self.health = 100
         self.max_health = 100

@@ -3,10 +3,10 @@ import pygame
 #définir la classe du gravier
 class Gravier(pygame.sprite.Sprite):
     def __init__(self, player1):
-        super().__init__()
+        super().__init__() #charger le sprite
         self.velocity = 10
         self.player1 = player1
-        self.image = pygame.image.load('D:/projet_3/gravier.png')
+        self.image = pygame.image.load('D:/projet_3/projectile.png')
         self.image = pygame.transform.scale(self.image, (150, 150))
         self.rect = self.image.get_rect()
         self.rect.x = player1.rect.x
@@ -16,7 +16,7 @@ class Gravier(pygame.sprite.Sprite):
         
     def rotate(self):
         #faire tourner le gravier
-        self.angle += 8
+        self.angle -= 8
         self.image = pygame.transform.rotozoom(self.origin_image, self.angle, 1)
         self.rect = self.image.get_rect(center=self.rect.center)    
     
