@@ -1,0 +1,46 @@
+awe-inspiring:Impressionnant, imposant
+boundless:Sans bornes, sans limites
+frozen / ice-cold / snowy:Gelé / glacé / enneigé
+northern:Du nord
+pristine:Pur, immaculé
+uncharted:Inexploré
+Glacier:Glacier
+peak:Sommet, cime
+stream:Ruisseau
+wilderness:Contrée 
+Open-minded:Ouvert d’esprit
+Open-hearted:Sincère
+peaceful:Calme, paisible
+respectful:Respectueux
+tolerant: Tolerant
+welcoming:Accueillant, chaleureux
+get along with:Bien s’entendre avec	
+pledge allegiance to:Prêter allégeance à
+take an oath:prêter serment
+citizenship:Citoyenneté, nationalité
+duty:Devoir, obligation
+rights:Droits
+apply for:Postuler
+Canoe:Canoë
+Hockey:Hockey
+hunt:Chasse ou chasser
+ice-skating:Patinage sur glace
+hike:Faire une randonnée à pied
+sled:Faire de la luge
+Attractive:Séduisant, attirant
+Booming:En plein essor
+lively:Gai, vivant
+multicultural:Multiculturel
+Progressive:Progressiste
+thriving:Florissant, prospère
+Vibrant:Vivant, animé
+intricate:Chargé 
+outrageous:Scandaleux, atroce
+scornful:Méprisant
+unfair:Injuste
+Look down on:Prendre qqun de haut
+make up for:Se faire pardonner pour
+Border:Frontière
+Roots:Racines
+Spoliation:Pillage
+Abuse:Malmener, maltraiter
